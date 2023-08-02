@@ -116,7 +116,7 @@ static const char *scrot[]  = { "scrot", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_c,      spawn,          {.v = browsercmd } },
-	{ MODKEY,                       XK_y,      spawn,          {.v = scrot } },
+	{ MODKEY|ShiftMask,             XK_y,      spawn,          {.v = scrot } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
