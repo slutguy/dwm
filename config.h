@@ -11,7 +11,7 @@ static       int smartgaps          = 0;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "ComicMonoNF:size=15",
-                                        "wqy-zenhei:size=16:type=Regular:antialias=true:autohint=true",
+                                        "WenQuanYi Zen Hei Sharp:size=16:type=Regular:antialias=true:autohint=true",
                                         "Symbols Nerd Font:pixelsize=30:type=2048-em:antialias=true:autoint=true"};
 static const char dmenufont[]       = "ComicMonoNF:size=14";
 static const char col_gray1[]       = "#222222";
