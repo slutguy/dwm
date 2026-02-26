@@ -10,7 +10,7 @@ static const unsigned int gappov    = 30;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "ComicMonoNF:size=15",
+static const char *fonts[]          = { "ComicMonoNF:size=20",
                                         "WenQuanYi Zen Hei Sharp:size=16:type=Regular:antialias=true:autohint=true",
                                         "Symbols Nerd Font:pixelsize=30:type=2048-em:antialias=true:autoint=true"};
 static const char dmenufont[]       = "ComicMonoNF:size=14";
@@ -128,6 +128,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+        { MODKEY|ShiftMask,             XK_n,      rotatestack,    {.i = +1 } },
+        { MODKEY|ShiftMask,             XK_w,      rotatestack,    {.i = -1 } },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY|Mod4Mask,              XK_u,      incrgaps,       {.i = +1 } },
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_u,      incrgaps,       {.i = -1 } },
